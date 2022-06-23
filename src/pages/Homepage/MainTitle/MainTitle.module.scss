@@ -1,0 +1,53 @@
+.main-title{
+    width: calc(100% - 400px);
+    height: 600px;
+    margin: 0 auto 150px;
+    background-image: url("../../../images/mainImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 130px 0 10px;
+    box-sizing: border-box;
+
+    .text-block{
+        width: 587px;
+        margin: 0 auto;
+
+        .title-h3{
+            position: relative;
+            width: max-content;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            color: #fff;
+            margin: 0 auto 40px;
+
+            &::before{
+                content: url("../../../images/white-leaf-left.svg");
+                position: absolute;
+                left: -80px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::after{
+                content: url("../../../images/white-leaf-right.svg");
+                position: absolute;
+                right: -80px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .title-h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 140%;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

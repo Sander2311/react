@@ -1,0 +1,110 @@
+.reviews{
+    width: calc(100% - 100px);
+    margin: 0 auto 150px;
+    box-sizing: border-box;
+
+    .title{
+        position: relative;
+        width: max-content;
+        margin: 0 auto 100px;
+
+        &::before{
+            content: url("../../../images/blue-leaf-left.svg");
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after{
+            content: url("../../../images/blue-leaf-right.svg");
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .h2-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    .slider{
+        position: relative;
+        margin-bottom: 60px;
+        height: 600px;
+
+        .card{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 30px 45px;
+            background-color: #018ABE;
+            opacity: 0;
+            border-radius: 10px;
+            transition: opacity ease-in-out 0.4s;
+        }
+
+        .card-active{
+            opacity: 1;
+        }
+
+        .card-name{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 140%;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .card-text{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            color: #fff;
+
+            &:first-of-type{
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .dots{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        
+        .dot{
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            margin-right: 20px;
+            background-color: gray;
+            border-radius: 3px;
+            border: none;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+
+            &:hover{
+                border: 1px solid black;
+            }
+        }
+
+        .dot-active{
+            background-color: #fff;
+        }
+    }
+
+}

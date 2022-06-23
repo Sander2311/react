@@ -1,0 +1,87 @@
+.about{
+    width: calc(100% - 550px);
+    margin: 0 auto 150px;
+
+    .title{
+        position: relative;
+        width: max-content;
+        margin: 0 auto 100px;
+
+        &::before{
+            content: url("../../../images/blue-leaf-left.svg");
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after{
+            content: url("../../../images/blue-leaf-right.svg");
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .h2-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    .item-row{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .img-block{
+            margin-left: 24px;
+        }
+
+        .text-block{
+            padding: 10px 60px 10px 0;
+        }
+
+        &:last-of-type{
+            margin-bottom: 0;
+
+            .img-block{
+                margin-left: 0;
+                margin-right: 24px;
+            }
+
+            .text-block{
+                padding: 10px 0 10px 60px;
+            }
+        }
+        .img{
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .title-h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .text{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 140%;
+            color: #fff;
+            margin-bottom: 25px;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

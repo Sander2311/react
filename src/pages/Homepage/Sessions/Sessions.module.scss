@@ -1,0 +1,67 @@
+.sessions{
+    width: calc(100% - 400px);
+    margin: 0 auto 150px;
+    box-sizing: border-box;
+
+    .title{
+        position: relative;
+        width: max-content;
+        margin: 0 auto 100px;
+
+        &::before{
+            content: url("../../../images/blue-leaf-left.svg");
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after{
+            content: url("../../../images/blue-leaf-right.svg");
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .h2-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 258px 258px;
+        gap: 24px;
+
+        .card{
+            display: flex;
+            align-items: flex-end;
+            background-image: url("../../../images/card-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 10px 40px 30px 40px;
+            border-radius: 10px;
+
+            &:first-of-type{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                box-shadow: inset 0 -5px 0 0px #018ABE;
+            }
+
+            .card-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 140%;
+                color: #fff;
+            }
+        }
+    }
+}

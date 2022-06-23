@@ -1,0 +1,98 @@
+.cost{
+    width: calc(100% - 550px);
+    margin: 0 auto 150px;
+
+    .title{
+        position: relative;
+        width: max-content;
+        margin: 0 auto 100px;
+
+        &::before{
+            content: url("../../../images/blue-leaf-left.svg");
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after{
+            content: url("../../../images/blue-leaf-right.svg");
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .h2-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .items{
+            margin-right: 130px;
+        }
+
+        .item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            margin-left: 60px;
+            
+
+            &::before{
+                content: url("../../../images/blue-leaf-left.svg");
+                position: absolute;
+                left: -60px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .item-name{
+            margin-right: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+        }
+
+        .item-cost{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    .img{
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .h3-title{
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 140%;
+        color: #fff;
+    }
+
+}
